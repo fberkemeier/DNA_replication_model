@@ -1,0 +1,38 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: DNA_replication_model
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Francisco
+    family-names: Berkemeier
+    email: fp409@cam.ac.uk
+    affiliation: University of Cambridge
+    orcid: 'https://orcid.org/0000-0001-9850-3666'
+repository-code: 'https://github.com/fberkemeier/DNA_replication_model'
+url: 'https://github.com/fberkemeier/DNA_replication_model'
+abstract: >-
+  We provide a comprehensive toolkit for analyzing DNA
+  replication timing, origin firing rates, and genomic
+  stability across different cell lines and chromosome
+  regions. The toolkit includes functions to load and
+  process data for various genomic regions, including
+  whole-genome, telomeres, centromeres, and specific genomic
+  sites. By fitting origin firing rates to replication
+  timing data, the toolkit enables efficient prediction and
+  comparison of experimental and predicted timing data. The
+  resulting error distribution between predicted and
+  experimental timings is instrumental in identifying
+  regions of interest. Leveraging datasets that encompass
+  different chromosomes and genomic features, the project
+  facilitates detailed visualization and analysis of
+  replication dynamics and genomic stability.
+keywords:
+  - DNA
+  - replication
+  - genetics
+license: MIT
