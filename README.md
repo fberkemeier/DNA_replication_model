@@ -14,7 +14,7 @@ This project provides a comprehensive toolkit for analyzing DNA replication timi
 
 This project is openly distributed under the MIT License. This license allows unrestricted use, redistribution, and modification, provided that proper attribution to the original creators is maintained.
 
-## Contact Information
+## Contact information
 
 For further information, contributions, or queries, please contact:
 
