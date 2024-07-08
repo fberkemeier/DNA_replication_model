@@ -1,3 +1,22 @@
 # A Whole-Genome Mathematical Model of Chemotherapy's Influence on DNA Replication
-Here we present the source code for "A Whole-Genome Mathematical Model of Chemotherapy's Influence on DNA Replication", by F. Berkemeier and M. A. Boemo.
-We include the fitting of firing rate files, as well as the efficient fitting algorithm used in the main text.
+
+## Description
+
+## Mathematical model
+
+## Usage
+
+## Examples
+
+## License
+
+This project is openly distributed under the MIT License. This license allows unrestricted use, redistribution, and modification, provided that proper attribution to the original creators is maintained.
+
+## Contact Information
+
+For further information, contributions, or queries, please contact:
+
+- **Email**: [fp409@cam.ac.uk](mailto:fp409@cam.ac.uk)
+- **GitHub**: [fberkemeier](https://github.com/fberkemeier)
+
+We welcome issues and discussions via GitHub to improve the model or address potential enhancements.
