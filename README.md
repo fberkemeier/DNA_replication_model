@@ -1,4 +1,4 @@
-# A Whole-Genome Mathematical Model of Chemotherapy's Influence on DNA Replication
+# A model of DNA replication to detect aberrant timing patterns
 
 ## Description
 
