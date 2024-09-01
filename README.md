@@ -1,4 +1,4 @@
-# A model of DNA replication to detect aberrant timing patterns
+# A Model of DNA Replication
 
 ## Description
 
