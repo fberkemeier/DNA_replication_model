@@ -20,19 +20,35 @@ While this expression holds true for an infinitely large genome, in practical te
 
 ## Usage
 
-Clone the repository to a local directory. All data generated in Berkemeier et al. (2024) should be download from here. Add this to a subfolder 'data' within the main directory folder. Bedgraph files of timing error and origin firing rates can be uploaded to the Genome Browser for comparison with other data.
+Clone the repository to a local directory. To explore the functionality and understand the workflow, we recommend using the provided dataset, which includes all necessary dependencies. This dataset, used in Berkemeier et al. (2024), can be downloaded [here](insert-link). Once downloaded, place the files into a subfolder named `data` within the main project directory. The dataset includes `.bedgraph` files representing timing errors and origin firing rates. These files can be uploaded to the Genome Browser for visualisation and comparison with other genomic data.
+
 
 ### 1. Data generation
 
-If you want to upload your own data, you can use this tool to upload timing data and convert it to origin firing rates via our model. You can run this locally or on a HPC platform. We recommend installing [`pybigtools`](https://pypi.org/project/pybigtools/) to deal with bigWig files. All utilities and necessary packages are listed in `utilities.ipynb`. DNA replication is simulated using the [Beacon Calculus](https://github.com/MBoemo/bcs).
+If you want to upload your own data, our tool allows you to process timing data and convert it to origin firing rates using our model. This can be run locally or on an HPC platform. To handle bigWig files, we recommend installing [`pybigtools`](https://pypi.org/project/pybigtools/). All required utilities and dependencies are documented in `utilities.ipynb`. DNA replication simulations are performed using the [Beacon Calculus](https://github.com/MBoemo/bcs).
 
 #### Examples
 
-As an example, we look at importing a bigWig file for HUVEC, from the [ENCODE database](https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&g=wgEncodeUwRepliSeq), also available at 'data/bigwig_files/HUVEC.bw' (in the data folder).
+As an example, consider importing a bigWig file for HUVEC cells from the [ENCODE database](https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&g=wgEncodeUwRepliSeq) (wavelet smooth signal). A local copy is also provided at `data/bigwig_files/HUVEC.bw`. Before fitting the data, it must be pre-processed. This can be done using `model.py` (Data generation), which converts Repli-seq bigWig files into text files at the desired resolution (e.g., 1 kb). The processed files are stored in `data/whole-genome_timing_data`.
+
+The script `code_fit.py` contains the main fitting and data generation functions:
+- **`fitfunction`**: Performs model fitting.
+- **`datagenfs`**: Processes the input data for fitting.
+
+You can customise the fitting process by modifying the following parameters:
+- `cell_line`: Specify the cell line name.
+- `chr_number`: Select the chromosome number.
+- `chrpos_min` and `chrpos_max`: Define the fitting region (or enable whole-genome fitting with `all_dataQ`—note this is computationally intensive).
+- Additional options:
+  - **Fork speed**: `fork_speed`
+  - **Sampling intervals**: `resolution` (default: 1000 for 1 kb)
+  - **Timing data scaling**: `scale-factor`
+  - **Fitting iterations**
+  - **Radius of influence**: `int_width` (in bp)
 
 ### 2. Visualization
 
-To reproduce the plots in the paper, open `plots.ipynb`. This notebook imports the functions defined in `utilities.ipynb`, so make sure these are called first, and all dependencies are installed. Run the notebook in any order, and explore different dynamics for different cell lines and genomic regions. In order to save plots, make sure the folder `figures` is present in the main directory.
+To reproduce the plots from the paper, open `plots.ipynb`. This notebook imports functions from `utilities.ipynb`, so ensure that the utilities are executed first and all dependencies are installed. You can run the cells in any order to explore dynamics across different cell lines and genomic regions. To save plots, ensure that the `Figures` folder exists in the main directory.
 
 #### Examples
 
