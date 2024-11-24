@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3c9d8ec4-d8cf-4921-b41c-483d49801d5c)# A Model of DNA Replication
+# A Model of DNA Replication
 
 ## Description
 
