@@ -82,3 +82,7 @@ For further information, contributions, or queries, please contact:
 - **GitHub**: [fberkemeier](https://github.com/fberkemeier)
 
 We welcome issues and discussions via GitHub to improve the model or address potential enhancements.
+
+## References
+
+Berkemeier, F., Cook, P. R., & Boemo, M. A. (2024). DNA replication timing reveals genome-wide features of transcription and fragility. bioRxiv
