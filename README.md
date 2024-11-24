@@ -4,9 +4,7 @@
 
 This project offers a comprehensive toolkit for analysing DNA replication timing, origin firing rates, and genomic stability across cell lines and chromosomal regions. Complementing the work in Berkemeier et al. (2024), it includes functions for loading and processing data across whole-genome regions, telomeres, centromeres, and specific loci of interest. By fitting origin firing rates to replication timing data, the toolkit efficiently predicts and compares experimental and modelled timing profiles. The resulting error distributions between predicted and experimental data help pinpoint regions of interest. With datasets spanning diverse chromosomes and genomic features, this toolkit enables detailed visualisation and analysis of replication dynamics and genomic stability.
 
-⚠️ **Note:** This repository is a work in progress and represents an ongoing project. The code and documentation are subject to updates and refinements, and while we strive for accuracy, they may not yet reflect the final, polished version. Your understanding and feedback are appreciated.
-
-
+⚠️ **Note:** This repository is a work in progress and represents an ongoing project. The code and documentation are subject to updates and refinements, and while we strive for accuracy, they may not yet reflect the final, polished version. Example datasets are currently stored in this repository via Git Large File Storage (LFS) but will soon be relocated to an external hosting platform for better accessibility. Your understanding and feedback are appreciated.
 
 ## Mathematical model
 
@@ -20,7 +18,7 @@ While this expression holds true for an infinitely large genome, in practical te
 
 ## Usage
 
-Clone the repository to a local directory. To explore the functionality and understand the workflow, we recommend using the provided dataset, which includes all necessary dependencies. This dataset, used in Berkemeier et al. (2024), can be downloaded [here](insert-link). Once downloaded, place the files into a subfolder named `data` within the main project directory. The dataset includes `.bedgraph` files representing timing errors and origin firing rates. These files can be uploaded to the Genome Browser for visualisation and comparison with other genomic data.
+Clone the repository to a local directory. To explore the functionality and understand the workflow, we recommend using the provided dataset (`data.zip`), which includes all necessary dependencies. Extract it to the main directory. Once downloaded, place the files into a subfolder named `data` within the main project directory. The dataset includes `.bedgraph` files representing timing errors and origin firing rates. These files can be uploaded to the Genome Browser for visualisation and comparison with other genomic data.
 
 
 ### 1. Data generation
