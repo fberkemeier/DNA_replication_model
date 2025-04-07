@@ -20,7 +20,9 @@ While this expression holds true for an infinitely large genome, in practical te
 
 ## Usage
 
-Clone the repository to a local directory. To explore the functionality and understand the workflow, we recommend using the provided dataset (`data.zip`), which includes all necessary dependencies. Extract it to the main directory. Once downloaded, place the files into a subfolder named `data` within the main project directory. The dataset includes `.bedgraph` files representing timing errors and origin firing rates. These files can be uploaded to the Genome Browser for visualisation and comparison with other genomic data.
+Clone the repository to a local directory. To explore the functionality and understand the workflow, we recommend using the provided dataset (`data.zip`), which includes all necessary dependencies. Extract it to the main directory. Note that datasets for minimal working examples are currently stored in this repository via Git Large File Storage (LFS), and `data.zip` must be downloaded and extracted.
+
+Once extracted, place the files into a subfolder named `data` within the main project directory. The dataset includes `.bedgraph` files representing timing errors and origin firing rates. These files can be uploaded to the Genome Browser for visualisation and comparison with other genomic data. For example, one should be able to access the bedgraph files for the error misfits at `data/whole-genome_error/bedgraph_files/error_HUVEC.bedgraph`, from the directory where `plots.ipynb` is located.
 
 
 ### 1. Data generation
@@ -29,7 +31,7 @@ If you want to upload your own data, our tool allows you to process timing data 
 
 #### Examples
 
-As an example, consider importing a bigWig file for HUVEC cells from the [ENCODE database](https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&g=wgEncodeUwRepliSeq) (wavelet smooth signal). A local copy is also provided at `data/bigwig_files/HUVEC.bw`. Before fitting the data, it must be pre-processed. This can be done using `model.py` (Data generation), which converts Repli-seq bigWig files into text files at the desired resolution (e.g., 1 kb). The processed files are stored in `data/whole-genome_timing_data`.
+As an example, consider importing a bigWig file for HUVEC cells from the [ENCODE database](https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&g=wgEncodeUwRepliSeq) (wavelet smooth signal). A local copy is also provided at `data/bigwig_files/HUVEC.bw`. Before fitting the data, it must be pre-processed. This can be done using `model.ipynb` (Data generation), which converts Repli-seq bigWig files into text files at the desired resolution (e.g., 1 kb). The processed files are stored in `data/whole-genome_timing_data`.
 
 The script `code_fit.py` contains the main fitting and data generation functions:
 - **`fitfunction`**: Performs model fitting.
