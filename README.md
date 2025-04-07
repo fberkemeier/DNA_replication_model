@@ -71,6 +71,19 @@ rt_plotf(cell_line,chr_number,chrpos_min,chrpos_max,scale_factor,file_name,spec_
 
 If `saveQ = True`, the plot is saved in `figures/file_name.pdf`.
 
+## System requirements
+
+This codebase was developed and tested on Python 3.12.3 under both Windows 10 and Windows 11. No installation procedure is required beyond installing standard Python 3 and the key dependencies. The main libraries include:
+
+- NumPy
+- pandas
+- matplotlib
+- seaborn
+- SciPy
+- pybigtools
+- pyideogram
+
+All scripts should remain compatible with standard Python 3 distributions on other operating systems; however, minor modifications (e.g., file paths) may be necessary. Any compatibility or dependency issues can be reported through the GitHub repository’s issue tracker.
 
 ## License
 
