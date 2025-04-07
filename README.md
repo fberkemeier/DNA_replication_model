@@ -24,6 +24,10 @@ Clone the repository to a local directory. To explore the functionality and unde
 
 Once extracted, place the files into a subfolder named `data` within the main project directory. The dataset includes `.bedgraph` files representing timing errors and origin firing rates. These files can be uploaded to the Genome Browser for visualisation and comparison with other genomic data. For example, one should be able to access the bedgraph files for the error misfits at `data/whole-genome_error/bedgraph_files/error_HUVEC.bedgraph`, from the directory where `plots.ipynb` is located.
 
+In all subsequent analyses, first execute the code below as a prerequisite.
+```
+from ipynb.fs.full.utilities import *
+```
 
 ### 1. Data generation
 
@@ -47,6 +51,8 @@ You can customise the fitting process by modifying the following parameters:
   - **Timing data scaling**: `scale-factor`
   - **Fitting iterations**
   - **Radius of influence**: `int_width` (in bp)
+ 
+The simplest way to understand how our fitting algorithm works is to follow the example in `model.ipynb`. To generate the timing data files (`*.txt`) for a given cell line, place its bigWig file in the directory `data/bigwig_files/{cell_line}.bw`. If you already have `data/whole-genome_timing_data` and `data/whole-genome_missing_data` for that cell line, you can skip this step. Ensure the `data` folder and any required subdirectories exist before proceeding. Note that `spec_fileQ` refers to fitting a specific region. For a whole-genome fit (`all_dataQ = True`), HPC resources are recommended, and a `.txt` file is generated for each chromosome.
 
 ### 2. Visualization
 
