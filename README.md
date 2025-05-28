@@ -2,7 +2,7 @@
 
 ## Description
 
-We introduce a comprehensive toolkit for analysing DNA replication timing, origin firing rates, and genomic stability across cell lines and chromosomal regions. Complementing the work in [Berkemeier et al. (2024)](https://www.biorxiv.org/content/10.1101/2024.11.25.625090v2), it includes functions for loading and processing data across whole-genome regions, telomeres, centromeres, and specific loci of interest. By fitting origin firing rates to replication timing data, the toolkit efficiently predicts and compares experimental and modelled timing profiles. The resulting error distributions between predicted and experimental data help pinpoint regions of interest. With datasets spanning diverse chromosomes and genomic features, this toolkit enables detailed visualisation and analysis of replication dynamics and genomic stability.
+We introduce a comprehensive toolkit for analysing DNA replication timing, origin firing rates, and genomic stability across cell lines and chromosomal regions. Complementing the work in [Berkemeier et al. (2025)](https://www.nature.com/articles/s41467-025-59991-w), it includes functions for loading and processing data across whole-genome regions, telomeres, centromeres, and specific loci of interest. By fitting origin firing rates to replication timing data, the toolkit efficiently predicts and compares experimental and modelled timing profiles. The resulting error distributions between predicted and experimental data help pinpoint regions of interest. With datasets spanning diverse chromosomes and genomic features, this toolkit enables detailed visualisation and analysis of replication dynamics and genomic stability.
 
 <!---
 ⚠️ **Note:** This repository is a work in progress and represents an ongoing project. The code and documentation are subject to updates and refinements, and while we strive for accuracy, they may not yet reflect the final, polished version. Datasets for minimal working examples are currently stored in this repository via Git Large File Storage (LFS) but will soon be relocated to an external hosting platform for better accessibility. Your understanding and feedback are appreciated.
@@ -108,4 +108,4 @@ We welcome issues and discussions via GitHub to improve the model or address pot
 
 ## References
 
-[Berkemeier, F., Cook, P. R., & Boemo, M. A. (2024). DNA replication timing reveals genome-wide features of transcription and fragility. bioRxiv](https://www.biorxiv.org/content/10.1101/2024.11.25.625090v2)
+[Berkemeier, F., Cook, P. R., & Boemo, M. A. DNA replication timing reveals genome-wide features of transcription and fragility. Nature Communications. 2025](https://www.nature.com/articles/s41467-025-59991-w)
